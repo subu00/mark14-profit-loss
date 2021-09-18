@@ -30,7 +30,7 @@ function calculateProfitAndLoss(initial,quantity, current) {
            
            let loss = (initial - current) * quantity
            let lossPercentage = Math.round((loss /initial) * 100);
-           showOutput(`The total loss is ₹${loss} and percentage is ${lossPercentage}😢 😭😢 😭  `)
+           showOutput(`The total loss is ₹${loss} and percentage is ${lossPercentage}% 😢 😭😢 😭  `)
           
 
        } else if(initial < current) {
