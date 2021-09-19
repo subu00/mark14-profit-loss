@@ -20,7 +20,7 @@ function submitHandler() {
 function calculateProfitAndLoss(initial,quantity, current) {
 
     if (initial === "" || current === "" || quantity === "") {
-        showOutput("Inital Rate / Quantity of Stocks / Current Rate cannot be empty")
+        showOutput("Inital Price / Quantity of Stocks / Current Price cannot be empty")
     } else if( Number(initial) <=0 || Number(quantity) <=0 || Number(current) <=0 ) {
         showOutput("Please put a positive value for Inital Value or Quantity of Stocks or current price")
     }
@@ -41,7 +41,7 @@ function calculateProfitAndLoss(initial,quantity, current) {
           
        } else {
            // the rest of the logic  
-           showOutput("No pain and  No gain. Thus, No gain and No pain 😜 ")
+           showOutput("No pain and  No gain.Neither Profit nor Loss")
           
 
        }
