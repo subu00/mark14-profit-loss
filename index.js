@@ -21,7 +21,7 @@ function calculateProfitAndLoss(initial,quantity, current) {
 
     if (initial === "" || current === "" || quantity === "") {
         showOutput("Inital Rate / Quantity of Stocks / Current Rate cannot be empty")
-    } else if( Number(initial) <=0 || Number(quantity) <=0) {
+    } else if( Number(initial) <=0 || Number(quantity) <=0 || Number(current) <=0 ) {
         showOutput("Initial rate OR quantity cannot be zero or less than zero")
     }
 
