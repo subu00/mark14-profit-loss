@@ -29,7 +29,7 @@ function calculateProfitAndLoss(initial,quantity, current) {
        else if(initial > current) {
            
            var loss = (initial - current) * quantity
-           var lossPercentage =  ((initial - current) * 100) / initial;
+           var lossPercentage =    (((initial - current) * quantity) / (initial * quantity)) * 100;
           lossPercentage = lossPercentage.toFixed(2)
            showOutput(`The total loss is ₹${loss} and percentage is ${lossPercentage}% 😢 😭😢 😭  `)
           
@@ -37,7 +37,7 @@ function calculateProfitAndLoss(initial,quantity, current) {
        } else if(initial < current) {
 
            var profit = (current - initial) * quantity
-            var    profitPercentage = ((current - initial) * 100) / initial
+            var    profitPercentage = (((current - initial) * quantity) / (initial * quantity)) * 100;
              profitPercentage = profitPercentage.toFixed(2)
            showOutput(`The total Profit is  ₹${profit} and percentage is ${profitPercentage}% 💸💸💸💸💸 `) 
           
